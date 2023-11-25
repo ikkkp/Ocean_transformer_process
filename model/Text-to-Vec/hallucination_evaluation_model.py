@@ -1,14 +1,19 @@
 # This is a sample Python script.
-
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 # Load model directly
+'''
+@File  :text-embedding-v2.py
+@Author:Ezra Zephyr
+@Date  :2023/11/2522:23
+@Desc  :
+'''
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import numpy as np
 
-
 # Press the green button in the gutter to run the script.
+# 文本相似度计算模型
 if __name__ == '__main__':
     model = AutoModelForSequenceClassification.from_pretrained('vectara/hallucination_evaluation_model')
     tokenizer = AutoTokenizer.from_pretrained('vectara/hallucination_evaluation_model')

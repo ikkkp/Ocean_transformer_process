@@ -1,8 +1,13 @@
+'''
+@File  :text-embedding-v2.py
+@Author:Ezra Zephyr
+@Date  :2023/11/2522:23
+@Desc  :
+'''
 from sentence_transformers import CrossEncoder
 import urllib3, socket
 from urllib3.connection import HTTPConnection
-
-
+# 文本相似度计算模型
 if __name__ == '__main__':
     HTTPConnection.default_socket_options = (
             HTTPConnection.default_socket_options + [
