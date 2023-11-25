@@ -5,9 +5,13 @@ from transformers import NougatProcessor, VisionEncoderDecoderModel
 from datasets import load_dataset
 import torch
 
-
 # https://huggingface.co/docs/transformers/main/en/model_doc/nougat
-
+'''
+@File  :nougat_model_small.py
+@Author:Ezra Zephyr
+@Date  :2023/11/260:23
+@Desc  :
+'''
 
 def nougatProcessor_small(filepath, model_name="Xenova/nougat-small", max_tokens=200):
     """

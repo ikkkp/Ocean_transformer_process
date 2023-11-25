@@ -5,6 +5,12 @@ from transformers import NougatProcessor, VisionEncoderDecoderModel
 from datasets import load_dataset
 import torch
 
+'''
+@File  :nougat_model_base.py
+@Author:Ezra Zephyr
+@Date  :2023/11/260:23
+@Desc  :
+'''
 
 # https://huggingface.co/docs/transformers/main/en/model_doc/nougat
 
