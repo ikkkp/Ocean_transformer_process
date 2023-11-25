@@ -8,18 +8,13 @@
 import dashscope
 from http import HTTPStatus
 
-DASHSCOPE_API_KEY = "sk-e0785e9be1cb4b2ba293b660173a3d06";
 
-
-def embed_with_str(input_str):
+def embed_with_str(dashscope_api_key, input_str):
     resp = dashscope.TextEmbedding.call(
         model=dashscope.TextEmbedding.Models.text_embedding_v1,
         input=input_str,
-        api_key=DASHSCOPE_API_KEY)
+        api_key=dashscope_api_key)
     if resp.status_code == HTTPStatus.OK:
         print(resp)
     else:
         print(resp)
-
-
-
