@@ -8,12 +8,6 @@ import torch
 import numpy as np
 
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     model = AutoModelForSequenceClassification.from_pretrained('vectara/hallucination_evaluation_model')
@@ -40,5 +34,6 @@ if __name__ == '__main__':
         logits = outputs.logits.cpu().detach().numpy()
         # convert logits to probabilities
         scores = 1 / (1 + np.exp(-logits)).flatten()
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
