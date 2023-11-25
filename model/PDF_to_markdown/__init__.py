@@ -1,0 +1,2 @@
+from .nougat_model_base import nougatProcessor_base
+from .nougat_model_small import nougatProcessor_small

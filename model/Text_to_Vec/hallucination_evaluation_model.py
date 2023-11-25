@@ -3,7 +3,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 # Load model directly
 '''
-@File  :text-embedding-v2.py
+@File  :text_embedding_v2.py
 @Author:Ezra Zephyr
 @Date  :2023/11/2522:23
 @Desc  :

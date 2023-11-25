@@ -1,5 +1,5 @@
 '''
-@File  :text-embedding-v2.py
+@File  :text_embedding_v2.py
 @Author:Ezra Zephyr
 @Date  :2023/11/2522:23
 @Desc  :
